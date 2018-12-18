@@ -6,21 +6,19 @@ function myFunction() {
         x.className = "menu";
     }
 }
-function save(){
-var selCheck = document.getElementById("werkplek");
-localStorage.setItem("werkplek", selCheck.checked);
-var selCheck = document.getElementById("ide");
-localStorage.setItem("ide", selCheck.checked);
+function save(week){
+  localStorage.setItem(week, JSON.stringify(document.getElementById(week).innerHTML));
 }
 
-function load(){    
-	var checked = JSON.parse(localStorage.getItem('werkplek'));
-	document.getElementById("werkplek").checked = checked;
-	var checked = JSON.parse(localStorage.getItem('ide'));
-	document.getElementById("ide").checked = checked;
+function load(){
+  var i; 
+  for (i=1;i<3;i++) {   
+	week=JSON.parse(localStorage.getItem('week'+i));
+	document.getElementById(week).innerHTML = week;
+  }
 }
+
 function wis(){
-    location.reload();
     localStorage.clear()
 
 }

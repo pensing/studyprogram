@@ -23,13 +23,16 @@
   		   	<img class="profile" src="images/paul_face.jpg" />
   		</div>
 		<div>
-			<h1 class="headercap">Leerplan Bootcamp CodeGorilla</h1>
-  			<h2 class="headersub">- Junior full-stack webdeveloper -</h2>
+			<h1 class="headercap">Leerplan Bootcamp<br/><span style="color: black;">CodeGorilla</span></h1>
+			<div style="background-color: white; height: fit-content;">
+  			<h2 class="headersub">- Junior Webdeveloper -</h2>
   			<h3 class="headername">Paul Ensing</h3>
+			</div>
 		</div>
   
   </header>
-  <nav class="menu" id="myTopnav">
+
+    <nav class="menu" id="myTopnav">
   <a href="index.html">Start</a>
   <a href="onderwerpen.html">Onderwerpen</a>
   <a href="doelen.html">Doelen</a>
@@ -45,43 +48,94 @@
   
   <div class="grid-container">
 
-  <div class="grid-item">
+  <div class="grid-item" id="week1">
   <h2>Week 1</h2>
-    <input type="checkbox" id="werkplek" name="werkplek">Werkplek<br>
-    <input type="checkbox" id="ide" name="ide" value="ide">IDE<br>
-    <input type="checkbox" name="html" value="html">HTML<br>
-	<input type="checkbox" name="css" value="css">CSS<br>
-  	<input type="checkbox" name="bootstrap" value="bootstrap">Self improvement<br>
-  	<input type="checkbox" name="javascript" value="javascript">Problem solving<br><br>
-  	<button onclick="save()" type="button">Opslaan</button>
+    <input type="checkbox" id="ide" name="ide" value="ide">IDE<br><br>
+    <input type="checkbox" name="html" value="html">HTML<br><br>
+	<input type="checkbox" name="css" value="css">CSS<br><br>
+  	<input type="checkbox" name="bootstrap" value="bootstrap">Self improvement<br><br>
+  	<button onclick="save('week1')" type="button">Opslaan</button>
   </div>
-  <div class="grid-item">
+  <div class="grid-item" id="week2">
   <h2>Week 2</h2>
-  <ul>
-  	  <li>HTML</li>
-  	  <li>CSS</li>
-  	  <li>IDE</li>
-  	  <li>Self improvement</li>
-  	  <li>Problem solving</li>
-  </ul>
+  	<input type="checkbox" name="javascript" value="javascript">Bootstrap<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Javascript<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Version Control<br><br>
+  	<button onclick="save('week2')" type="button">Opslaan</button>
   </div>
-  <div class="grid-item">
+  <div class="grid-item" id="week3">
   <h2>Week 3</h2>
-  <ul>
-  	  <li>PHP</li>
-  	  <li>Laravel</li>
-  	  <li>MySQL</li>
-  	  <li>Linux</li>
-  </ul>
+  	<input type="checkbox" name="javascript" value="javascript">Scrum<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Trello<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Javascript<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Deployment<br><br>
+  	<button onclick="save('week3')" type="button">Opslaan</button>
   </div>
-  <div class="grid-item">
+  <div class="grid-item" id="week4">
   <h2>Week 4</h2>
-  <ul>
-  	  <li>Self improvement</li>
-  	  <li>Communication</li>
-  	  <li>Problem solving</li>
-  	  <li>Time management</li>
-  </ul>
+  	<input type="checkbox" name="javascript" value="javascript">PHP<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Problem Solving<br><br>
+  	<button onclick="save('week4')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week5">
+  <h2>Week 5</h2>
+  	<input type="checkbox" name="javascript" value="javascript">PHP<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Databases<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">SQL<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Linux<br><br>
+  	<button onclick="save('week'5')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week6">
+  <h2>Week 6</h2>
+  	<input type="checkbox" name="javascript" value="javascript">PHP<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Cloud Deployment<br><br>
+  	<button onclick="save('week6')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week7">
+  <h2>Week 7</h2>
+  	<input type="checkbox" name="javascript" value="javascript">PHP<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Laravel<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">MVC<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">OOP<br><br>
+  	<button onclick="save('week7')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week8">
+  <h2>Week 8</h2>
+  	<input type="checkbox" name="javascript" value="javascript">PHP<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Laravel<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">MVC<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">OOP<br><br>
+  	<button onclick="save('week8')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week9">
+  <h2>Week 9</h2>
+  	<input type="checkbox" name="javascript" value="javascript">PHP<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Laravel<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">MVC<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">OOP<br><br>
+  	<button onclick="save('week9')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week10">
+  <h2>Week 10</h2>
+  	<input type="checkbox" name="javascript" value="javascript">Angular<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Security<br><br>
+  	<input type="checkbox" name="javascript" value="javascript">Project Planning<br><br>
+  	<button onclick="save('week10')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week11">
+  <h2>Week 11</h2>
+  	<input type="checkbox" name="javascript" value="javascript">Project<br><br>
+  	<button onclick="save('week11')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week12">
+  <h2>Week 12</h2>
+  	<input type="checkbox" name="javascript" value="javascript">Project<br><br>
+  	<button onclick="save('week12')" type="button">Opslaan</button>
+  </div>
+  <div class="grid-item" id="week13">
+  <h2>Week 13</h2>
+  	<input type="checkbox" name="javascript" value="javascript">Project<br><br>
+  	<button onclick="save('week13')" type="button">Opslaan</button>
   </div>
   
   </div>
