@@ -50,13 +50,18 @@ for(var i=0, l=checkboxes.length; i<l;i++) {
 }
 }
 
-// debug
+// 
 function gsaLoad() {
 getmealpref = JSON.parse(localStorage.mealpref);
 alert(getmealpref[0]);
 }
 
-function save(week){
+function save(){
+  alert('Deze functie is nog niet actief');
+  save_test();
+ }
+
+function save_test(){
   cbFunction();
   //localStorage.setItem("cb", JSON.stringify(cbArr));
   localStorage.setItem("cb", cbArr);
