@@ -105,6 +105,11 @@ h3.headername {
   text-decoration: none;
   text-transform: uppercase;
  }
+.menu a.active{
+  color: #0080c0;
+  text-decoration: none;
+  text-transform: uppercase;
+ }
 
 .menu .icon {
   display: none;
